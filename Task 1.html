@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Task 1 </title>
+        <link rel="stylesheet" href="Task 1.css">
+    </head>
+    <body>
+        <h1>Image Gallery</h1>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+        <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="gallery">
+        <div class="image nature"><img src="nature 1.jpg" alt="Nature 1" onclick="openLightbox(this)" /></div>
+        <div class="image city"><img src="city 1.jpg" alt="City 1" onclick="openLightbox(this)" /></div>
+        <div class="image animals"><img src="animal 1.jpg" alt="Animal 1" onclick="openLightbox(this)" /></div>
+        <div class="image nature"><img src="nature 2.jpg" alt="Nature 2" onclick="openLightbox(this)" /></div>
+        <div class="image city"><img src="city 2.jpg" alt="City 2" onclick="openLightbox(this)" /></div>
+        <div class="image animals"><img src="animal 2.jpg" alt="Animal 2" onclick="openLightbox(this)" /></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img class="lightbox-img" id="lightbox-img" />
+        <div class="nav">
+        <span class="prev" onclick="changeImage(-1)">❮</span>
+        <span class="next" onclick="changeImage(1)">❯</span>
+        </div>
+    </div>
+        </body>
+</html>
