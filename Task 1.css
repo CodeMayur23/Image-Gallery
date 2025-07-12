@@ -74,3 +74,47 @@ h1
     align-items: center;
     flex-direction: column;
 }
+
+.lightbox-img
+{
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.close 
+{
+    position: absolute;
+    top: 20px; right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav 
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next 
+{
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+@media (max-width: 600px) 
+{
+    .nav span 
+    {
+        font-size: 35px;
+    }
+}
